@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 export const Nav = () => {
   return (
-    <nav className="sticky top-0 px-6 py-5 border-r border-r-gray-700">
+    <nav className="px-6 py-5 max-md:border-b md:border-r border-gray-700">
       <h2 className="dark:text-white font-bold text-base mb-3">Pages</h2>
       <ul className="grid gap-2">
         <li>
@@ -10,8 +10,8 @@ export const Nav = () => {
             to="/item-list-manager"
             className={({ isActive }) =>
               isActive
-                ? "font-medium text-sm dark:text-violet-400 cursor-default pointer-events-none"
-                : "font-medium text-sm dark:text-gray-400 dark:hover:text-violet-400"
+                ? "font-medium text-sm text-violet-500 dark:text-violet-400 cursor-default pointer-events-none"
+                : "font-medium text-sm text-gray-500 dark:text-gray-400 hover:text-violet-500 dark:hover:text-violet-400"
             }
           >
             Item List Manager
@@ -19,10 +19,14 @@ export const Nav = () => {
         </li>
         <li>
           <NavLink
-            to="/item-list-manager2"
-            className="font-medium text-sm dark:text-gray-400 dark:hover:text-violet-400"
+            to="/code-review-feedback"
+            className={({ isActive }) =>
+              isActive
+                ? "font-medium text-sm text-violet-500 dark:text-violet-400 cursor-default pointer-events-none"
+                : "font-medium text-sm text-gray-500 dark:text-gray-400 hover:text-violet-500 dark:hover:text-violet-400"
+            }
           >
-            ItemListManager
+            Code Review Feedback
           </NavLink>
         </li>
       </ul>
