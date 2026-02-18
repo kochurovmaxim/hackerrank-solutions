@@ -3,6 +3,7 @@ import { MainLayout } from "../layouts/MainLayout";
 import { ItemListManagerPage } from "@/pages/item-list-manager/ItemListManagerPage";
 import { CodeReviewFeedbackPage } from "@/pages/code-review-feedback/CodeReviewFeedbackPage";
 import { ArticleSortingPage } from "@/pages/article-sorting/ArticleSortingPage";
+import { ContactFormPage } from "@/pages/contact-form";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "article-sorting",
         element: <ArticleSortingPage />,
+      },
+      {
+        path: "contact-form",
+        element: <ContactFormPage />,
       },
     ],
   },

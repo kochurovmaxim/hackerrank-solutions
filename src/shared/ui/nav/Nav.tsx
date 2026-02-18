@@ -41,6 +41,18 @@ export const Nav = () => {
             Article Sorting
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/contact-form"
+            className={({ isActive }) =>
+              isActive
+                ? "font-medium text-sm text-violet-500 dark:text-violet-400 cursor-default pointer-events-none"
+                : "font-medium text-sm text-gray-500 dark:text-gray-400 hover:text-violet-500 dark:hover:text-violet-400"
+            }
+          >
+            Contact Form
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
