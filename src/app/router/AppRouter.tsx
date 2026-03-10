@@ -4,6 +4,7 @@ import { ItemListManagerPage } from "@/pages/item-list-manager/ItemListManagerPa
 import { CodeReviewFeedbackPage } from "@/pages/code-review-feedback/CodeReviewFeedbackPage";
 import { ArticleSortingPage } from "@/pages/article-sorting/ArticleSortingPage";
 import { ContactFormPage } from "@/pages/contact-form";
+import { BlogPostPage } from "@/pages/blog-post/ui/BlogPostPage";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "contact-form",
         element: <ContactFormPage />,
+      },
+      {
+        path: "blog-post",
+        element: <BlogPostPage />,
       },
     ],
   },
